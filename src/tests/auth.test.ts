@@ -21,6 +21,6 @@ describe("getAPIKey tests", () => {
     };
 
     const result = getAPIKey(invalidHeaders);
-    expect(result).toBe("invalidtoken");
+    expect(result).toBeNull();
   });
 });
