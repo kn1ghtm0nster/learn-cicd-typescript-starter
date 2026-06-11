@@ -18,6 +18,12 @@ jobs:
         with:
           node-version: 22
 
+      - name: Show versions
+        run: |
+          node --version
+          npm --version
+          grep '"lockfileVersion"' package-lock.json
+
       - name: Install dependencies
         run: npm ci
 
